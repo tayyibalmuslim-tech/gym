@@ -98,6 +98,10 @@ textarea.inp{min-height:62px;resize:vertical}
 .ex-name .en{font-size:12px;color:var(--muted);direction:ltr;text-align:right;display:block}
 .howbtn{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:5px 10px;font-size:12.5px;font-weight:700;cursor:pointer;flex:none}
 .howbtn.on{border-color:var(--olive);color:var(--olive)}
+.target{padding:6px 14px 4px}
+.feel{background:rgba(229,72,77,.08);border:1px solid rgba(229,72,77,.28);border-radius:10px;padding:8px 10px;margin:4px 0 10px;font-size:14px;line-height:1.55}
+.feel b{color:#ff9a9d}
+.target .mapbox svg{max-width:560px}
 .how{display:none;padding:4px 14px 12px;border-top:1px dashed var(--line);margin-top:8px}
 .how.on{display:block}
 .how ol{margin:8px 0;padding-inline-start:20px}
@@ -193,6 +197,7 @@ const DEFAULT_PLAN = {
  "cycle": 1,
  "title": "الدورة 1 — معايرة",
  "createdAt": "2026-11-26",
+ "rev": 2,
  "targetRpe": 7,
  "notes": [
   "دي دورة معايرة: كل الأوزان تقديرية. ابدأ بالوزن المكتوب وعدّله في نفس التمرينة لحد ما توصل لـ RPE 7 (يعني لسه فيك 3 عدات).",
@@ -239,7 +244,8 @@ const DEFAULT_PLAN = {
      "mistake": "الركبة تقفل لجوه أو الكعب يترفع من الأرض.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-squat",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الفخذ الأمامي والمقعدة، وبالذات وإنت طالع من تحت. أسفل الضهر شغال ثابت بس — لو وجعك وقف وراجع التكنيك."
     },
     {
      "id": "walking_lunge",
@@ -270,7 +276,8 @@ const DEFAULT_PLAN = {
      "mistake": "الخطوة القصيرة بتحط الضغط كله على الركبة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Walking+Lunge",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "حرقان في فخذ ومقعدة الرجل اللي قدام. لو حاسس بيه في الركبة بس — طوّل الخطوة."
     },
     {
      "id": "leg_curl_a",
@@ -299,7 +306,8 @@ const DEFAULT_PLAN = {
      "mistake": "رفع الوسط من على الجهاز عشان تكمل العدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد وحرقان في الفخذ الخلفي فوق الركبة. لو السمانة واخدة الشغل — وجّه صوابعك لتحت شوية."
     },
     {
      "id": "calf_raise",
@@ -326,7 +334,8 @@ const DEFAULT_PLAN = {
      "mistake": "الحركة السريعة النطاطة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Standing+Calf+Raises",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "حرقان في السمانة، وشد قوي تحت لما الكعب ينزل لآخره."
     },
     {
      "id": "plank",
@@ -356,7 +365,8 @@ const DEFAULT_PLAN = {
      "mistake": "الوسط يقع لتحت أو يترفع لفوق.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Forearm+Plank",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "البطن كلها بتترعش ومعاها الجوانب. لو أسفل الضهر وجعك — وسطك واقع، اعصر المقعدة."
     }
    ]
   },
@@ -396,7 +406,8 @@ const DEFAULT_PLAN = {
      "mistake": "فتح الكوع 90° جنب الجسم بيبهدل الكتف.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-bench-press",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الصدر أساسًا، ومقدمة الكتف والتراي في آخر الدفعة. وجع في مقدمة الكتف = ضم الكوع أكتر."
     },
     {
      "id": "ohp",
@@ -428,7 +439,8 @@ const DEFAULT_PLAN = {
      "mistake": "ميلان الضهر لورا وتحويل التمرين لبنش.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Overhead+Press",
      "linkVerified": false,
-     "warmup": true
+     "warmup": true,
+     "feel": "مقدمة الكتف والتراي، والبطن والمقعدة شادّين ثابتين. تعب في أسفل الضهر = إنت بتميل لورا."
     },
     {
      "id": "incline_db",
@@ -458,7 +470,8 @@ const DEFAULT_PLAN = {
      "mistake": "زاوية بنش عالية قوي.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-incline-bench-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "أعلى الصدر تحت الترقوة، ومقدمة الكتف. لو الكتف واخد الشغل كله — وطّي زاوية البنش."
     },
     {
      "id": "lateral_a",
@@ -487,7 +500,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة بالجسم ورفع الترابيس.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "جنب الكتف (الحتة اللي بتعرّضك). لو حاسس بيه في الرقبة والترابيس — خفف الوزن ونزّل كتفك."
     },
     {
      "id": "pushdown",
@@ -514,7 +528,8 @@ const DEFAULT_PLAN = {
      "mistake": "الكوع يطلع لقدام والكتف يشارك.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Cable+V+Bar+Push+Downs",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "التراي ورا الدراع فوق الكوع على طول. الكتف والصدر مش المفروض يشتغلوا."
     },
     {
      "id": "pushups",
@@ -545,7 +560,8 @@ const DEFAULT_PLAN = {
      "mistake": "الوسط يقع والمدى نص حركة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Push+Up",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الصدر والتراي، والبطن شادة طول الوقت عشان الجسم يفضل خط مستقيم."
     },
     {
      "id": "incline_walk",
@@ -576,7 +592,8 @@ const DEFAULT_PLAN = {
      "mistake": "مسك المقابض بيلغي نص المجهود.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "السمانة والمقعدة، ونفَسك يعلى شوية بس تقدر تتكلم."
     }
    ]
   },
@@ -621,7 +638,8 @@ const DEFAULT_PLAN = {
      "mistake": "تقويس أسفل الضهر أو شد البار بالدراع.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-deadlift",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الفخذ الخلفي والمقعدة وإنت طالع، والضهر كله شادد ثابت، والمسكة في الساعد. وجع حاد في أسفل الضهر = وقف فورًا."
     },
     {
      "id": "row",
@@ -653,7 +671,8 @@ const DEFAULT_PLAN = {
      "mistake": "الوقوف تدريجيًا مع كل عدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-bent-over-row",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "وسط الضهر بين لوحي الكتف والجناح. لو الباي بيخلص قبل الضهر — فكّر بالكوع مش بالإيد."
     },
     {
      "id": "pulldown",
@@ -684,7 +703,8 @@ const DEFAULT_PLAN = {
      "mistake": "الشد بالمرجحة والضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-pulldown",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح تحت باطك وعلى جنب الضهر. لو الساعد والباي تعبوا الأول — خفف المسكة واسحب بالكوع."
     },
     {
      "id": "facepull",
@@ -713,7 +733,8 @@ const DEFAULT_PLAN = {
      "mistake": "الوزن التقيل بيحوّله لتمرين ضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-face-pulls",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "خلف الكتف وأعلى الضهر بين لوحي الكتف."
     },
     {
      "id": "bb_curl",
@@ -742,7 +763,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة بالضهر.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Curl",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الباي قدام الدراع، وشوية في الساعد."
     },
     {
      "id": "dead_hang",
@@ -771,7 +793,8 @@ const DEFAULT_PLAN = {
      "mistake": "تهدل الكتف بالكامل.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dead+Hang",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الساعد والمسكة بيحرقوا، مع إطالة في الجناح والكتف."
     }
    ]
   },
@@ -810,7 +833,8 @@ const DEFAULT_PLAN = {
      "mistake": "مقعدتك تترفع من الكرسي تحت.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-leg-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الفخذ الأمامي والمقعدة. رجلك أعلى على المنصة = المقعدة تشتغل أكتر."
     },
     {
      "id": "bulgarian",
@@ -840,7 +864,8 @@ const DEFAULT_PLAN = {
      "mistake": "الوقوف قريب قوي من البنش.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-bulgarian-split-squat",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "مقعدة وفخذ الرجل اللي قدام، وإطالة في فخذ الرجل اللي ورا من قدام."
     },
     {
      "id": "hip_thrust",
@@ -869,7 +894,8 @@ const DEFAULT_PLAN = {
      "mistake": "تقويس الضهر فوق بدل عصر المقعدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-hip-thrust",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "المقعدة بالذات وإنت فوق — اعصرها. لو الفخذ الخلفي واخد الشغل — قرّب قدمك شوية."
     },
     {
      "id": "leg_curl_b",
@@ -898,7 +924,8 @@ const DEFAULT_PLAN = {
      "mistake": "رفع الوسط.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد وحرقان في الفخذ الخلفي فوق الركبة، وأقوى في آخر المجموعات."
     },
     {
      "id": "knee_raise",
@@ -928,7 +955,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة.",
      "link": "https://musclewiki.com/ar-sa/exercise/hanging-knee-raises",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "أسفل البطن، والساعد ماسك البار."
     }
    ]
   },
@@ -967,7 +995,8 @@ const DEFAULT_PLAN = {
      "mistake": "ارتداد البار من على الصدر.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-incline-bench-press",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "أعلى الصدر ومقدمة الكتف، والتراي في آخر الدفعة."
     },
     {
      "id": "db_bench",
@@ -997,7 +1026,8 @@ const DEFAULT_PLAN = {
      "mistake": "النزول نص مدى.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Bench+Press",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الصدر كله مع إطالة واضحة تحت، والتراي في آخر الدفعة."
     },
     {
      "id": "db_ohp",
@@ -1027,7 +1057,8 @@ const DEFAULT_PLAN = {
      "mistake": "تقويس الضهر بعيد عن المسند.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-seated-overhead-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "مقدمة وجنب الكتف، والتراي."
     },
     {
      "id": "lateral_b",
@@ -1056,7 +1087,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "جنب الكتف مع حرقان قوي في آخر العدات. الرقبة لازم تفضل مرتاحة."
     },
     {
      "id": "oh_ext",
@@ -1083,7 +1115,8 @@ const DEFAULT_PLAN = {
      "mistake": "فتح الكوع لبرا.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-overhead-tricep-extension",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "التراي، وبالذات شد قوي وإنت نازل ورا راسك."
     },
     {
      "id": "dips",
@@ -1113,7 +1146,8 @@ const DEFAULT_PLAN = {
      "mistake": "النزول العميق قوي بيضغط على الكتف.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Chest+Dip",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "أسفل الصدر والتراي. وجع في مقدمة الكتف = إنت نازل زيادة."
     },
     {
      "id": "incline_walk",
@@ -1144,7 +1178,8 @@ const DEFAULT_PLAN = {
      "mistake": "مسك المقابض بيلغي نص المجهود.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "السمانة والمقعدة، ونفَسك يعلى شوية بس تقدر تتكلم."
     }
    ]
   },
@@ -1183,7 +1218,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة لورا.",
      "link": "https://musclewiki.com/ar-sa/exercise/neutral-pulldown",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح، وبالذات الجزء اللي تحت ناحية الوسط."
     },
     {
      "id": "db_row",
@@ -1214,7 +1250,8 @@ const DEFAULT_PLAN = {
      "mistake": "لف الجسم مع كل عدة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Row+Unilateral",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح ناحية الوسط ووسط الضهر، مع إطالة تحت."
     },
     {
      "id": "cable_row",
@@ -1245,7 +1282,8 @@ const DEFAULT_PLAN = {
      "mistake": "الميل لورا وقدام بالجسم كله.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-seated-cable-row",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "وسط الضهر بين لوحي الكتف، والجناح."
     },
     {
      "id": "rdl",
@@ -1277,7 +1315,8 @@ const DEFAULT_PLAN = {
      "mistake": "تقويس الضهر للوصول للأرض.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-romanian-deadlift",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد قوي في الفخذ الخلفي وإنت نازل، والمقعدة وإنت طالع."
     },
     {
      "id": "hammer",
@@ -1305,7 +1344,8 @@ const DEFAULT_PLAN = {
      "mistake": "المرجحة.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-hammer-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الباي والساعد من فوق."
     },
     {
      "id": "farmer",
@@ -1337,7 +1377,8 @@ const DEFAULT_PLAN = {
      "mistake": "الميل لجنب أو تقويس الضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-farmer-walk",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "المسكة والساعد والترابيس، والبطن وجوانبها شادّين عشان ما تميلش."
     }
    ]
   },
@@ -1380,7 +1421,10 @@ const openHow = new Set();
 
 function freshState(){ return {v:1, current:DEFAULT_PLAN.cycle, cycles:{[DEFAULT_PLAN.cycle]:{plan:DEFAULT_PLAN, log:{}, rest:{}}}}; }
 function load(){
-  try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.cycles) return s; } }catch(e){}
+  try{ const raw = localStorage.getItem(KEY); if(raw){ const s = JSON.parse(raw); if(s && s.cycles){
+    const c = s.cycles[DEFAULT_PLAN.cycle];
+    if(c && (c.plan.rev||1) < (DEFAULT_PLAN.rev||1)) c.plan = DEFAULT_PLAN;
+    return s; } } }catch(e){}
   return freshState();
 }
 let saveT=null;
@@ -1428,17 +1472,27 @@ function shapeSVG(sh, fill){
   const [cx,cy,rx,ry,rot]=sh;
   return `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" transform="rotate(${rot} ${cx} ${cy})" fill="${fill}"/>`;
 }
-function bodyMap(primary=[], secondary=[]){
+function shapeY(sh){
+  if(sh[0]==="poly"){ const ys=sh[1].map(p=>p[1]); return [Math.min(...ys),Math.max(...ys)]; }
+  const r=Math.max(sh[2],sh[3]); return [sh[1]-r, sh[1]+r];
+}
+function bodyMap(primary=[], secondary=[], crop=false){
   const P = new Set(primary), Sx = new Set(secondary.filter(m=>!P.has(m)));
-  let shapes="";
-  const draw=(m,fill)=> (MUSCLE_REG[m]||[m]).forEach(k=> (REGIONS[k]||[]).forEach(sh=> shapes+=shapeSVG(sh,fill)));
+  let shapes="", y0=707, y1=0;
+  const draw=(m,fill)=> (MUSCLE_REG[m]||[m]).forEach(k=> (REGIONS[k]||[]).forEach(sh=>{ shapes+=shapeSVG(sh,fill); const [a,b]=shapeY(sh); y0=Math.min(y0,a); y1=Math.max(y1,b); }));
   Sx.forEach(m=>draw(m,"rgba(255,150,30,.5)"));
   P.forEach(m=>draw(m,"rgba(229,60,60,.62)"));
-  return `<div class="mapbox"><svg viewBox="0 0 836 707" role="img" aria-label="خريطة العضلات">
-    <g style="mix-blend-mode:multiply">${shapes}</g>
+  let vy=0, vh=707;
+  if(crop && y1>y0){
+    vy=Math.max(0,y0-45); let ve=Math.min(707,y1+45);
+    if(ve-vy<300){ const mid=(vy+ve)/2; vy=Math.max(0,Math.min(707-300,mid-150)); ve=vy+300; }
+    vh=ve-vy;
+  }
+  return `<div class="mapbox"><svg viewBox="0 ${vy} 836 ${vh}" role="img" aria-label="خريطة العضلات">
+    <g>${shapes}</g>
     <image href="${BODY_IMG}" x="0" y="0" width="836" height="707" style="mix-blend-mode:multiply"/>
-    <text x="222" y="700" text-anchor="middle" font-size="22" fill="#55606a" font-family="Cairo">خلف</text>
-    <text x="605" y="700" text-anchor="middle" font-size="22" fill="#55606a" font-family="Cairo">أمام</text>
+    <text x="14" y="${vy+26}" text-anchor="end" font-size="22" font-weight="700" fill="#55606a" font-family="Cairo">خلف</text>
+    <text x="822" y="${vy+26}" text-anchor="start" font-size="22" font-weight="700" fill="#55606a" font-family="Cairo">أمام</text>
   </svg></div>
   <div class="legend"><span class="p">عضلة أساسية: ${[...P].map(m=>MUSCLE_AR[m]).join("، ")||"—"}</span>${Sx.size?`<span class="s">مساعدة: ${[...Sx].map(m=>MUSCLE_AR[m]).join("، ")}</span>`:""}</div>`;
 }
@@ -1490,13 +1544,12 @@ function renderSession(){
     <button class="big ${done?"alt":"go"}" data-act="toggleRest" data-sid="${s.id}">${done?"✓ اتعمل — إلغاء":"تمام، خلصت اليوم ده"}</button></div>${navButtons(s)}`;
   }
   const L=slog(s.id);
-  const prim=[...new Set(s.exercises.flatMap(e=>e.primary))], sec=[...new Set(s.exercises.flatMap(e=>e.secondary))];
   h += `<div class="card">
     <div class="meta">
       <div class="field"><label>التاريخ</label><input class="inp" type="date" data-sf="date" value="${esc(L.date)}"></div>
       <div class="field"><label>وزن جسمك (كجم)</label><input class="inp" inputmode="decimal" data-sf="bw" value="${esc(L.bw)}" placeholder="${ATHLETE.bodyweight}"></div>
     </div>
-    <div style="margin-top:12px">${bodyMap(prim,sec)}</div>
+    <div class="small muted" style="margin-top:10px">🎯 كل تمرين تحت مكتوب فيه هتحس بيه فين، ومتعلّم على الصورة بتاعته.</div>
   </div>`;
   s.exercises.forEach((ex,i)=>{ h += exCard(s,ex,i); });
   h += `<div class="card"><div class="field"><label>ملاحظات الجلسة (طاقة، نوم، ألم، أي حاجة)</label><textarea class="inp" data-sf="notes" placeholder="مثال: نمت 6 ساعات، السكوات كان تقيل في آخر مجموعة">${esc(L.notes)}</textarea></div></div>
@@ -1533,8 +1586,11 @@ function exCard(s, ex, i){
       </div>
       <button class="howbtn ${how?"on":""}" data-act="how">${how?"إخفاء":"طريقة الأداء"}</button>
     </div>
+    <div class="target">
+      ${ex.feel?`<div class="feel">🎯 <b>هتحس بيه فين:</b> ${esc(ex.feel)}</div>`:""}
+      ${bodyMap(ex.primary, ex.secondary, true)}
+    </div>
     <div class="how ${how?"on":""}">
-      ${bodyMap(ex.primary, ex.secondary)}
       <ol>${ex.how.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
       ${ex.tip?`<div class="tipbox t">💡 ${esc(ex.tip)}</div>`:""}
       ${ex.mistake?`<div class="tipbox m">⛔ غلطة شائعة: ${esc(ex.mistake)}</div>`:""}

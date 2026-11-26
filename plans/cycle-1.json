@@ -4,6 +4,7 @@
  "cycle": 1,
  "title": "الدورة 1 — معايرة",
  "createdAt": "2026-11-26",
+ "rev": 2,
  "targetRpe": 7,
  "notes": [
   "دي دورة معايرة: كل الأوزان تقديرية. ابدأ بالوزن المكتوب وعدّله في نفس التمرينة لحد ما توصل لـ RPE 7 (يعني لسه فيك 3 عدات).",
@@ -50,7 +51,8 @@
      "mistake": "الركبة تقفل لجوه أو الكعب يترفع من الأرض.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-squat",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الفخذ الأمامي والمقعدة، وبالذات وإنت طالع من تحت. أسفل الضهر شغال ثابت بس — لو وجعك وقف وراجع التكنيك."
     },
     {
      "id": "walking_lunge",
@@ -81,7 +83,8 @@
      "mistake": "الخطوة القصيرة بتحط الضغط كله على الركبة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Walking+Lunge",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "حرقان في فخذ ومقعدة الرجل اللي قدام. لو حاسس بيه في الركبة بس — طوّل الخطوة."
     },
     {
      "id": "leg_curl_a",
@@ -110,7 +113,8 @@
      "mistake": "رفع الوسط من على الجهاز عشان تكمل العدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد وحرقان في الفخذ الخلفي فوق الركبة. لو السمانة واخدة الشغل — وجّه صوابعك لتحت شوية."
     },
     {
      "id": "calf_raise",
@@ -137,7 +141,8 @@
      "mistake": "الحركة السريعة النطاطة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Standing+Calf+Raises",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "حرقان في السمانة، وشد قوي تحت لما الكعب ينزل لآخره."
     },
     {
      "id": "plank",
@@ -167,7 +172,8 @@
      "mistake": "الوسط يقع لتحت أو يترفع لفوق.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Forearm+Plank",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "البطن كلها بتترعش ومعاها الجوانب. لو أسفل الضهر وجعك — وسطك واقع، اعصر المقعدة."
     }
    ]
   },
@@ -207,7 +213,8 @@
      "mistake": "فتح الكوع 90° جنب الجسم بيبهدل الكتف.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-bench-press",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الصدر أساسًا، ومقدمة الكتف والتراي في آخر الدفعة. وجع في مقدمة الكتف = ضم الكوع أكتر."
     },
     {
      "id": "ohp",
@@ -239,7 +246,8 @@
      "mistake": "ميلان الضهر لورا وتحويل التمرين لبنش.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Overhead+Press",
      "linkVerified": false,
-     "warmup": true
+     "warmup": true,
+     "feel": "مقدمة الكتف والتراي، والبطن والمقعدة شادّين ثابتين. تعب في أسفل الضهر = إنت بتميل لورا."
     },
     {
      "id": "incline_db",
@@ -269,7 +277,8 @@
      "mistake": "زاوية بنش عالية قوي.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-incline-bench-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "أعلى الصدر تحت الترقوة، ومقدمة الكتف. لو الكتف واخد الشغل كله — وطّي زاوية البنش."
     },
     {
      "id": "lateral_a",
@@ -298,7 +307,8 @@
      "mistake": "المرجحة بالجسم ورفع الترابيس.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "جنب الكتف (الحتة اللي بتعرّضك). لو حاسس بيه في الرقبة والترابيس — خفف الوزن ونزّل كتفك."
     },
     {
      "id": "pushdown",
@@ -325,7 +335,8 @@
      "mistake": "الكوع يطلع لقدام والكتف يشارك.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Cable+V+Bar+Push+Downs",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "التراي ورا الدراع فوق الكوع على طول. الكتف والصدر مش المفروض يشتغلوا."
     },
     {
      "id": "pushups",
@@ -356,7 +367,8 @@
      "mistake": "الوسط يقع والمدى نص حركة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Push+Up",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الصدر والتراي، والبطن شادة طول الوقت عشان الجسم يفضل خط مستقيم."
     },
     {
      "id": "incline_walk",
@@ -387,7 +399,8 @@
      "mistake": "مسك المقابض بيلغي نص المجهود.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "السمانة والمقعدة، ونفَسك يعلى شوية بس تقدر تتكلم."
     }
    ]
   },
@@ -432,7 +445,8 @@
      "mistake": "تقويس أسفل الضهر أو شد البار بالدراع.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-deadlift",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "الفخذ الخلفي والمقعدة وإنت طالع، والضهر كله شادد ثابت، والمسكة في الساعد. وجع حاد في أسفل الضهر = وقف فورًا."
     },
     {
      "id": "row",
@@ -464,7 +478,8 @@
      "mistake": "الوقوف تدريجيًا مع كل عدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-bent-over-row",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "وسط الضهر بين لوحي الكتف والجناح. لو الباي بيخلص قبل الضهر — فكّر بالكوع مش بالإيد."
     },
     {
      "id": "pulldown",
@@ -495,7 +510,8 @@
      "mistake": "الشد بالمرجحة والضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-pulldown",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح تحت باطك وعلى جنب الضهر. لو الساعد والباي تعبوا الأول — خفف المسكة واسحب بالكوع."
     },
     {
      "id": "facepull",
@@ -524,7 +540,8 @@
      "mistake": "الوزن التقيل بيحوّله لتمرين ضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-face-pulls",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "خلف الكتف وأعلى الضهر بين لوحي الكتف."
     },
     {
      "id": "bb_curl",
@@ -553,7 +570,8 @@
      "mistake": "المرجحة بالضهر.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Curl",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الباي قدام الدراع، وشوية في الساعد."
     },
     {
      "id": "dead_hang",
@@ -582,7 +600,8 @@
      "mistake": "تهدل الكتف بالكامل.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dead+Hang",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الساعد والمسكة بيحرقوا، مع إطالة في الجناح والكتف."
     }
    ]
   },
@@ -621,7 +640,8 @@
      "mistake": "مقعدتك تترفع من الكرسي تحت.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-leg-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الفخذ الأمامي والمقعدة. رجلك أعلى على المنصة = المقعدة تشتغل أكتر."
     },
     {
      "id": "bulgarian",
@@ -651,7 +671,8 @@
      "mistake": "الوقوف قريب قوي من البنش.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-bulgarian-split-squat",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "مقعدة وفخذ الرجل اللي قدام، وإطالة في فخذ الرجل اللي ورا من قدام."
     },
     {
      "id": "hip_thrust",
@@ -680,7 +701,8 @@
      "mistake": "تقويس الضهر فوق بدل عصر المقعدة.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-hip-thrust",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "المقعدة بالذات وإنت فوق — اعصرها. لو الفخذ الخلفي واخد الشغل — قرّب قدمك شوية."
     },
     {
      "id": "leg_curl_b",
@@ -709,7 +731,8 @@
      "mistake": "رفع الوسط.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد وحرقان في الفخذ الخلفي فوق الركبة، وأقوى في آخر المجموعات."
     },
     {
      "id": "knee_raise",
@@ -739,7 +762,8 @@
      "mistake": "المرجحة.",
      "link": "https://musclewiki.com/ar-sa/exercise/hanging-knee-raises",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "أسفل البطن، والساعد ماسك البار."
     }
    ]
   },
@@ -778,7 +802,8 @@
      "mistake": "ارتداد البار من على الصدر.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-incline-bench-press",
      "linkVerified": true,
-     "warmup": true
+     "warmup": true,
+     "feel": "أعلى الصدر ومقدمة الكتف، والتراي في آخر الدفعة."
     },
     {
      "id": "db_bench",
@@ -808,7 +833,8 @@
      "mistake": "النزول نص مدى.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Bench+Press",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الصدر كله مع إطالة واضحة تحت، والتراي في آخر الدفعة."
     },
     {
      "id": "db_ohp",
@@ -838,7 +864,8 @@
      "mistake": "تقويس الضهر بعيد عن المسند.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-seated-overhead-press",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "مقدمة وجنب الكتف، والتراي."
     },
     {
      "id": "lateral_b",
@@ -867,7 +894,8 @@
      "mistake": "المرجحة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "جنب الكتف مع حرقان قوي في آخر العدات. الرقبة لازم تفضل مرتاحة."
     },
     {
      "id": "oh_ext",
@@ -894,7 +922,8 @@
      "mistake": "فتح الكوع لبرا.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-overhead-tricep-extension",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "التراي، وبالذات شد قوي وإنت نازل ورا راسك."
     },
     {
      "id": "dips",
@@ -924,7 +953,8 @@
      "mistake": "النزول العميق قوي بيضغط على الكتف.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Chest+Dip",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "أسفل الصدر والتراي. وجع في مقدمة الكتف = إنت نازل زيادة."
     },
     {
      "id": "incline_walk",
@@ -955,7 +985,8 @@
      "mistake": "مسك المقابض بيلغي نص المجهود.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "السمانة والمقعدة، ونفَسك يعلى شوية بس تقدر تتكلم."
     }
    ]
   },
@@ -994,7 +1025,8 @@
      "mistake": "المرجحة لورا.",
      "link": "https://musclewiki.com/ar-sa/exercise/neutral-pulldown",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح، وبالذات الجزء اللي تحت ناحية الوسط."
     },
     {
      "id": "db_row",
@@ -1025,7 +1057,8 @@
      "mistake": "لف الجسم مع كل عدة.",
      "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Row+Unilateral",
      "linkVerified": false,
-     "warmup": false
+     "warmup": false,
+     "feel": "الجناح ناحية الوسط ووسط الضهر، مع إطالة تحت."
     },
     {
      "id": "cable_row",
@@ -1056,7 +1089,8 @@
      "mistake": "الميل لورا وقدام بالجسم كله.",
      "link": "https://musclewiki.com/ar-sa/exercise/machine-seated-cable-row",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "وسط الضهر بين لوحي الكتف، والجناح."
     },
     {
      "id": "rdl",
@@ -1088,7 +1122,8 @@
      "mistake": "تقويس الضهر للوصول للأرض.",
      "link": "https://musclewiki.com/ar-sa/exercise/barbell-romanian-deadlift",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "شد قوي في الفخذ الخلفي وإنت نازل، والمقعدة وإنت طالع."
     },
     {
      "id": "hammer",
@@ -1116,7 +1151,8 @@
      "mistake": "المرجحة.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-hammer-curl",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "الباي والساعد من فوق."
     },
     {
      "id": "farmer",
@@ -1148,7 +1184,8 @@
      "mistake": "الميل لجنب أو تقويس الضهر.",
      "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-farmer-walk",
      "linkVerified": true,
-     "warmup": false
+     "warmup": false,
+     "feel": "المسكة والساعد والترابيس، والبطن وجوانبها شادّين عشان ما تميلش."
     }
    ]
   },
