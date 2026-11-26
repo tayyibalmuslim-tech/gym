@@ -1,0 +1,1172 @@
+{
+ "app": "gym-mazen",
+ "kind": "plan",
+ "cycle": 1,
+ "title": "الدورة 1 — معايرة",
+ "createdAt": "2026-11-26",
+ "targetRpe": 7,
+ "notes": [
+  "دي دورة معايرة: كل الأوزان تقديرية. ابدأ بالوزن المكتوب وعدّله في نفس التمرينة لحد ما توصل لـ RPE 7 (يعني لسه فيك 3 عدات).",
+  "سجّل الوزن والعدات الفعلية لكل مجموعة حتى لو مختلفة عن المكتوب — دي أهم بيانات هبني عليها الدورة 2.",
+  "من الدورة 2 الهدف RPE 8 في الأساسي، والزيادة: +2.5 كجم علوي، +5 كجم رجل، والأكسسوار عدات الأول.",
+  "قبل كل تمرين أساسي اعمل 2–3 مجموعات إحماء خفيفة (مش بتتسجل)."
+ ],
+ "sessions": [
+  {
+   "id": "legsA",
+   "day": 1,
+   "name": "Legs A",
+   "ar": "رجل A — تقيل",
+   "type": "heavy",
+   "exercises": [
+    {
+     "id": "squat",
+     "en": "Barbell Squat",
+     "ar": "سكوات بالبار",
+     "sets": 4,
+     "reps": "5",
+     "weight": 50,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 180,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "quads",
+      "glutes"
+     ],
+     "secondary": [
+      "hamstrings",
+      "lower_back",
+      "abs"
+     ],
+     "how": [
+      "حط البار على أعلى الترابيس (مش على الرقبة) وامسكه أعرض من كتفك بشوية.",
+      "اسحب نفَس عميق في البطن واقفلها كأنك مستني ضربة.",
+      "انزل بالوسط لورا والركبة تمشي في اتجاه صوابع رجلك لحد ما فخذك يبقى موازي للأرض أو أقل.",
+      "اطلع بدفع الأرض بكل القدم، وخلي صدرك لفوق طول الحركة."
+     ],
+     "tip": "قبل المجموعات الأساسية: البار فاضي × 10، ثم 50% × 5، ثم 75% × 3.",
+     "mistake": "الركبة تقفل لجوه أو الكعب يترفع من الأرض.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-squat",
+     "linkVerified": true,
+     "warmup": true
+    },
+    {
+     "id": "walking_lunge",
+     "en": "Dumbbell Walking Lunge",
+     "ar": "طعنات مشي بالدمبل",
+     "sets": 3,
+     "reps": "10 لكل رجل",
+     "weight": 8,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "quads",
+      "glutes"
+     ],
+     "secondary": [
+      "hamstrings",
+      "calves"
+     ],
+     "how": [
+      "امسك دمبل في كل إيد ودراعك مفرود جنبك.",
+      "اخطي خطوة واسعة لقدام وانزل لحد ما الركبة الخلفية تقرب من الأرض.",
+      "ادفع بكعب الرجل الأمامية واطلع، وكمّل بالرجل التانية."
+     ],
+     "tip": "الوزن المكتوب لكل إيد. لو التوازن صعب ابدأ من غير دمبل.",
+     "mistake": "الخطوة القصيرة بتحط الضغط كله على الركبة.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Walking+Lunge",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "leg_curl_a",
+     "en": "Machine Hamstring Curl",
+     "ar": "ثني الرجل على الجهاز",
+     "sets": 3,
+     "reps": "10–12",
+     "weight": 25,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 75,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "hamstrings"
+     ],
+     "secondary": [
+      "calves"
+     ],
+     "how": [
+      "نام على بطنك والوسادة تحت بطن السمانة.",
+      "امسك المقابض واثني الرجل لحد ما الكعب يقرب من مقعدتك.",
+      "ثانية ثبات فوق، ونزّل في 3 ثواني."
+     ],
+     "tip": "النزول البطيء هو اللي بيبني الخلفية.",
+     "mistake": "رفع الوسط من على الجهاز عشان تكمل العدة.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "calf_raise",
+     "en": "Machine Standing Calf Raise",
+     "ar": "سمانة واقف",
+     "sets": 3,
+     "reps": "12–15",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "calves"
+     ],
+     "secondary": [],
+     "how": [
+      "قف بمقدمة القدم على الحافة والكعب برا.",
+      "انزل بالكعب لآخر مدى لحد ما تحس بشد.",
+      "اطلع على أطراف صوابعك لآخر مدى واثبت ثانية."
+     ],
+     "tip": "المدى الكامل أهم من الوزن.",
+     "mistake": "الحركة السريعة النطاطة.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Standing+Calf+Raises",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "plank",
+     "en": "Forearm Plank",
+     "ar": "بلانك على الكوع",
+     "sets": 3,
+     "reps": "أقصى وقت",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "time",
+     "primary": [
+      "abs"
+     ],
+     "secondary": [
+      "obliques",
+      "lower_back"
+     ],
+     "how": [
+      "الكوعين تحت الكتف مباشرة والجسم خط مستقيم من الراس للكعب.",
+      "اعصر المقعدة والبطن كأنك بتشد حزام.",
+      "اتنفس طبيعي واثبت لحد ما الشكل يبوظ."
+     ],
+     "tip": "رقمك المبدئي كان 20 ثانية — هدفك تكسره.",
+     "mistake": "الوسط يقع لتحت أو يترفع لفوق.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Forearm+Plank",
+     "linkVerified": false,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "pushA",
+   "day": 2,
+   "name": "Push A",
+   "ar": "دفع A — تقيل",
+   "type": "heavy",
+   "exercises": [
+    {
+     "id": "bench",
+     "en": "Barbell Bench Press",
+     "ar": "بنش بريس بالبار",
+     "sets": 4,
+     "reps": "5",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 180,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest"
+     ],
+     "secondary": [
+      "front_delts",
+      "triceps"
+     ],
+     "how": [
+      "نام والعينين تحت البار، والقدم ثابتة في الأرض.",
+      "قفّل لوحي الكتف لورا ولتحت واعمل قوس خفيف في الضهر.",
+      "امسك أعرض من الكتف بشوية، ونزّل البار لأسفل الصدر والكوع بزاوية حوالي 45°.",
+      "ادفع البار لفوق ولورا ناحية وشك."
+     ],
+     "tip": "إحماء: البار فاضي × 10، ثم 50% × 5، ثم 75% × 3. ولو لوحدك استخدم الـ safety.",
+     "mistake": "فتح الكوع 90° جنب الجسم بيبهدل الكتف.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-bench-press",
+     "linkVerified": true,
+     "warmup": true
+    },
+    {
+     "id": "ohp",
+     "en": "Barbell Overhead Press",
+     "ar": "ضغط كتف بالبار واقف",
+     "sets": 3,
+     "reps": "6",
+     "weight": 25,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 150,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "front_delts"
+     ],
+     "secondary": [
+      "triceps",
+      "traps",
+      "abs"
+     ],
+     "how": [
+      "امسك البار على عرض الكتف وهو مستريح على مقدمة الكتف.",
+      "اعصر المقعدة والبطن عشان ضهرك ما يتقوسش.",
+      "ادفع البار لفوق في خط مستقيم وعدّي راسك لقدام لما يعدّي وشك.",
+      "اقفل الكوع فوق والبار فوق نص القدم."
+     ],
+     "tip": "إحماء: البار فاضي × 8 ثم 70% × 3.",
+     "mistake": "ميلان الضهر لورا وتحويل التمرين لبنش.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Overhead+Press",
+     "linkVerified": false,
+     "warmup": true
+    },
+    {
+     "id": "incline_db",
+     "en": "Dumbbell Incline Bench Press",
+     "ar": "ضغط صدر عالي بالدمبل",
+     "sets": 3,
+     "reps": "8–10",
+     "weight": 12,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 120,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest"
+     ],
+     "secondary": [
+      "front_delts",
+      "triceps"
+     ],
+     "how": [
+      "اضبط البنش على حوالي 30° (أعلى من كده الشغل يروح للكتف).",
+      "ارفع الدمبلز على صدرك بمساعدة الركبة.",
+      "نزّل لمستوى الصدر الأوسط وادفع لفوق لحد ما الكوع يتفرد."
+     ],
+     "tip": "الوزن لكل إيد.",
+     "mistake": "زاوية بنش عالية قوي.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-incline-bench-press",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "lateral_a",
+     "en": "Dumbbell Lateral Raise",
+     "ar": "رفرفة جانبي بالدمبل",
+     "sets": 3,
+     "reps": "12–15",
+     "weight": 5,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "front_delts"
+     ],
+     "secondary": [
+      "traps"
+     ],
+     "how": [
+      "قف مستقيم والدمبل جنبك.",
+      "ارفع الدراعين للجنب مع ثنية خفيفة في الكوع لحد مستوى الكتف.",
+      "نزّل ببطء ومن غير مرجحة."
+     ],
+     "tip": "فكّر إنك بتزق الدمبل لبعيد مش لفوق.",
+     "mistake": "المرجحة بالجسم ورفع الترابيس.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "pushdown",
+     "en": "Cable V-Bar Pushdown",
+     "ar": "تراي بوش داون على الكابل",
+     "sets": 3,
+     "reps": "10–12",
+     "weight": 20,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "triceps"
+     ],
+     "secondary": [],
+     "how": [
+      "امسك البار والكوع لازق في جنبك.",
+      "افرد الكوع لتحت للآخر واعصر التراي.",
+      "ارجع لحد زاوية 90° بس والكوع ثابت مكانه."
+     ],
+     "tip": "الكوع هو المحور الوحيد اللي بيتحرك.",
+     "mistake": "الكوع يطلع لقدام والكتف يشارك.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Machine+Cable+V+Bar+Push+Downs",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "pushups",
+     "en": "Push-up",
+     "ar": "ضغط",
+     "sets": 2,
+     "reps": "أقصى عدد",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest",
+      "triceps"
+     ],
+     "secondary": [
+      "front_delts",
+      "abs"
+     ],
+     "how": [
+      "الإيد تحت الكتف والجسم خط واحد.",
+      "انزل لحد ما الصدر يقرب من الأرض والكوع قريب من الجسم.",
+      "اطلع للآخر. وقف لما الشكل يبوظ."
+     ],
+     "tip": "ده من اختبارات المقاتل — سجّل رقمك بدقة.",
+     "mistake": "الوسط يقع والمدى نص حركة.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Push+Up",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "incline_walk",
+     "en": "Incline Treadmill Walk",
+     "ar": "مشي على مشاية بميل",
+     "sets": 1,
+     "reps": "15 دقيقة",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 0,
+     "rpe": 7,
+     "kind": "cardio",
+     "primary": [
+      "calves",
+      "glutes"
+     ],
+     "secondary": [
+      "quads",
+      "hamstrings"
+     ],
+     "how": [
+      "اضبط الميل على 6–10% والسرعة 5–6 كم/ساعة.",
+      "امشِ بخطوات طبيعية من غير ما تمسك في المشاية.",
+      "حافظ على مجهود متوسط: تقدر تتكلم بجمل قصيرة."
+     ],
+     "tip": "ده لياقة هوائية للمقاتل، مش تمرين تكسير. خليك مرتاح.",
+     "mistake": "مسك المقابض بيلغي نص المجهود.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
+     "linkVerified": false,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "pullA",
+   "day": 3,
+   "name": "Pull A",
+   "ar": "سحب A — تقيل",
+   "type": "heavy",
+   "exercises": [
+    {
+     "id": "deadlift",
+     "en": "Barbell Deadlift",
+     "ar": "ديدلفت",
+     "sets": 3,
+     "reps": "5",
+     "weight": 60,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 180,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "hamstrings",
+      "glutes",
+      "lower_back"
+     ],
+     "secondary": [
+      "traps",
+      "forearms",
+      "quads",
+      "lats"
+     ],
+     "how": [
+      "قف ونص قدمك تحت البار، وامسك على عرض الكتف.",
+      "انزل بالوسط لحد ما الساق تلمس البار، وصدرك لفوق والضهر مفرود.",
+      "اشدّ البار لجسمك (كأنك بتعصر برتقانة تحت باطك) وخد نفَس.",
+      "ادفع الأرض برجلك والبار ماشي لازق في رجلك لحد ما تقف مستقيم.",
+      "نزّل بنفس المسار: الوسط لورا الأول وبعدين الركبة."
+     ],
+     "tip": "إحماء: 40 كجم × 5، ثم 50 × 3. أول 3 دورات تكنيك وبس — صوّر نفسك من الجنب.",
+     "mistake": "تقويس أسفل الضهر أو شد البار بالدراع.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-deadlift",
+     "linkVerified": true,
+     "warmup": true
+    },
+    {
+     "id": "row",
+     "en": "Barbell Bent Over Row",
+     "ar": "تجديف بالبار",
+     "sets": 4,
+     "reps": "6",
+     "weight": 35,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 150,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "lats",
+      "traps"
+     ],
+     "secondary": [
+      "rear_delts",
+      "biceps",
+      "lower_back"
+     ],
+     "how": [
+      "امسك البار على عرض الكتف، واثني الوسط لقدام لحد زاوية حوالي 45° والضهر مفرود.",
+      "اسحب البار لأعلى البطن والكوع ماشي لورا.",
+      "اعصر الضهر ثانية ونزّل بتحكم."
+     ],
+     "tip": "الجسم ثابت — لو بتتمرجح الوزن تقيل.",
+     "mistake": "الوقوف تدريجيًا مع كل عدة.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-bent-over-row",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "pulldown",
+     "en": "Lat Pulldown",
+     "ar": "سحب أمامي على الجهاز",
+     "sets": 3,
+     "reps": "6–8",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 120,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "lats"
+     ],
+     "secondary": [
+      "biceps",
+      "rear_delts"
+     ],
+     "how": [
+      "ثبّت رجلك تحت الوسادة وامسك أعرض من الكتف.",
+      "ميّل لورا شوية وصدرك لفوق.",
+      "اسحب البار لأعلى الصدر بالكوع لتحت ولورا.",
+      "ارجع لحد ما الدراع يتفرد للآخر."
+     ],
+     "tip": "فكّر إنك بتنزّل الكوع لجيبك.",
+     "mistake": "الشد بالمرجحة والضهر.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-pulldown",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "facepull",
+     "en": "Cable Rope Face Pull",
+     "ar": "فيس بول بالحبل",
+     "sets": 3,
+     "reps": "12–15",
+     "weight": 10,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "rear_delts"
+     ],
+     "secondary": [
+      "traps"
+     ],
+     "how": [
+      "الكابل على مستوى الوش، امسك الحبل والإبهام لورا.",
+      "اسحب الحبل ناحية وشك وافتح الإيدين لبرا عند الودان.",
+      "ثانية ثبات ونرجع ببطء."
+     ],
+     "tip": "سجلك قال 25 كجم كانت تقيلة — التزم بـ 10–12.",
+     "mistake": "الوزن التقيل بيحوّله لتمرين ضهر.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-face-pulls",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "bb_curl",
+     "en": "Barbell Curl",
+     "ar": "باي بالبار",
+     "sets": 3,
+     "reps": "8–10",
+     "weight": 20,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 75,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "biceps"
+     ],
+     "secondary": [
+      "forearms"
+     ],
+     "how": [
+      "قف والبار في إيدك وكف الإيد لقدام.",
+      "اثني الكوع وارفع البار لمستوى الكتف والكوع ثابت جنبك.",
+      "اعصر فوق ونزّل في 2–3 ثواني."
+     ],
+     "tip": "النزول البطيء = نمو.",
+     "mistake": "المرجحة بالضهر.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Barbell+Curl",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "dead_hang",
+     "en": "Dead Hang",
+     "ar": "تعليق على البار",
+     "sets": 2,
+     "reps": "أقصى وقت",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "time",
+     "primary": [
+      "forearms"
+     ],
+     "secondary": [
+      "lats"
+     ],
+     "how": [
+      "امسك بار العقلة والكف لقدام.",
+      "اتعلق والدراع مفرود والكتف مشدود خفيف لتحت.",
+      "اثبت لحد ما مسكتك تفتح."
+     ],
+     "tip": "قوة المسكة أساسية للمقاتل وفي العقلة.",
+     "mistake": "تهدل الكتف بالكامل.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dead+Hang",
+     "linkVerified": false,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "legsB",
+   "day": 4,
+   "name": "Legs B",
+   "ar": "رجل B — حجم",
+   "type": "volume",
+   "exercises": [
+    {
+     "id": "leg_press",
+     "en": "Machine Leg Press",
+     "ar": "ليج برس",
+     "sets": 4,
+     "reps": "10",
+     "weight": 60,
+     "unit": "كجم",
+     "weightNote": "مضاف",
+     "rest": 120,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "quads",
+      "glutes"
+     ],
+     "secondary": [
+      "hamstrings"
+     ],
+     "how": [
+      "اقعد والضهر كله لازق في الكرسي، والقدم على عرض الكتف.",
+      "فك الأمان ونزّل لحد زاوية 90° في الركبة.",
+      "ادفع لفوق من غير ما تقفل الركبة للآخر."
+     ],
+     "tip": "الوزن المكتوب = الأوزان المضافة بس (من غير وزن الجهاز).",
+     "mistake": "مقعدتك تترفع من الكرسي تحت.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-leg-press",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "bulgarian",
+     "en": "Dumbbell Bulgarian Split Squat",
+     "ar": "بلغاري سبليت سكوات",
+     "sets": 3,
+     "reps": "8 لكل رجل",
+     "weight": 6,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "quads",
+      "glutes"
+     ],
+     "secondary": [
+      "hamstrings"
+     ],
+     "how": [
+      "حط مشط رجلك الخلفية على بنش بارتفاع الركبة تقريبًا.",
+      "الرجل الأمامية بعيدة كفاية إن الركبة ما تعدّيش الصوابع كتير.",
+      "انزل لحد ما فخذ الرجل الأمامية يبقى موازي للأرض واطلع بالكعب."
+     ],
+     "tip": "ابدأ بالرجل الأضعف. الوزن لكل إيد.",
+     "mistake": "الوقوف قريب قوي من البنش.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-bulgarian-split-squat",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "hip_thrust",
+     "en": "Barbell Hip Thrust",
+     "ar": "هيب ثراست بالبار",
+     "sets": 3,
+     "reps": "10",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "glutes"
+     ],
+     "secondary": [
+      "hamstrings"
+     ],
+     "how": [
+      "اسند لوحي الكتف على بنش والبار على الحوض (استخدم مخدة).",
+      "القدم على عرض الحوض والساق عمودي فوق.",
+      "ارفع الوسط لحد ما الجسم يبقى خط مستقيم واعصر المقعدة ثانيتين."
+     ],
+     "tip": "الدقن لتحت شوية طول الحركة.",
+     "mistake": "تقويس الضهر فوق بدل عصر المقعدة.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-hip-thrust",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "leg_curl_b",
+     "en": "Machine Hamstring Curl",
+     "ar": "ثني الرجل على الجهاز",
+     "sets": 3,
+     "reps": "12",
+     "weight": 20,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "hamstrings"
+     ],
+     "secondary": [
+      "calves"
+     ],
+     "how": [
+      "نام على بطنك والوسادة تحت بطن السمانة.",
+      "اثني الرجل لآخر مدى وثانية ثبات.",
+      "نزّل في 3 ثواني."
+     ],
+     "tip": "حجم أعلى ووزن أخف من يوم A.",
+     "mistake": "رفع الوسط.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-hamstring-curl",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "knee_raise",
+     "en": "Hanging Knee Raise",
+     "ar": "رفع الركبة متعلق",
+     "sets": 3,
+     "reps": "12",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "abs"
+     ],
+     "secondary": [
+      "obliques",
+      "forearms"
+     ],
+     "how": [
+      "اتعلق على البار والجسم ثابت.",
+      "ارفع الركبة لصدرك ببطء ولفّ الحوض لفوق.",
+      "نزّل بتحكم من غير مرجحة."
+     ],
+     "tip": "لو مسكتك فصلت قبل البطن — كمّل على كرسي الكابتن.",
+     "mistake": "المرجحة.",
+     "link": "https://musclewiki.com/ar-sa/exercise/hanging-knee-raises",
+     "linkVerified": true,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "pushB",
+   "day": 5,
+   "name": "Push B",
+   "ar": "دفع B — حجم",
+   "type": "volume",
+   "exercises": [
+    {
+     "id": "incline_bb",
+     "en": "Barbell Incline Bench Press",
+     "ar": "بنش عالي بالبار",
+     "sets": 4,
+     "reps": "8",
+     "weight": 30,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 150,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest"
+     ],
+     "secondary": [
+      "front_delts",
+      "triceps"
+     ],
+     "how": [
+      "البنش على 30–45°، ولوحي الكتف مقفولين.",
+      "فك البار والدراع مفرود.",
+      "نزّل لأعلى الصدر وادفع لفوق بتحكم لحد ما الكوع يتفرد."
+     ],
+     "tip": "إحماء: البار فاضي × 10 ثم 60% × 5.",
+     "mistake": "ارتداد البار من على الصدر.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-incline-bench-press",
+     "linkVerified": true,
+     "warmup": true
+    },
+    {
+     "id": "db_bench",
+     "en": "Dumbbell Bench Press",
+     "ar": "بنش بالدمبل",
+     "sets": 3,
+     "reps": "10",
+     "weight": 14,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest"
+     ],
+     "secondary": [
+      "front_delts",
+      "triceps"
+     ],
+     "how": [
+      "نام على بنش مستوي والدمبلز فوق صدرك.",
+      "نزّل الدمبلز جنب الصدر والكوع بزاوية 45°.",
+      "ادفع لفوق وقرّب الدمبلز من بعض من غير ما يخبطوا."
+     ],
+     "tip": "الدمبل بيدي مدى أوسع من البار.",
+     "mistake": "النزول نص مدى.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Bench+Press",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "db_ohp",
+     "en": "Dumbbell Seated Overhead Press",
+     "ar": "ضغط كتف بالدمبل قاعد",
+     "sets": 3,
+     "reps": "10",
+     "weight": 10,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "front_delts"
+     ],
+     "secondary": [
+      "triceps",
+      "traps"
+     ],
+     "how": [
+      "اقعد على بنش بمسند والضهر لازق فيه.",
+      "الدمبلز على مستوى الكتف وكف الإيد لقدام.",
+      "ادفع لفوق لحد ما الكوع يتفرد ونزّل بتحكم."
+     ],
+     "tip": "الوزن لكل إيد.",
+     "mistake": "تقويس الضهر بعيد عن المسند.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-seated-overhead-press",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "lateral_b",
+     "en": "Dumbbell Lateral Raise",
+     "ar": "رفرفة جانبي بالدمبل",
+     "sets": 4,
+     "reps": "15",
+     "weight": 4,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 45,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "front_delts"
+     ],
+     "secondary": [
+      "traps"
+     ],
+     "how": [
+      "قف مستقيم والدمبل جنبك.",
+      "ارفع الدراعين للجنب لحد مستوى الكتف مع ثنية خفيفة في الكوع.",
+      "نزّل ببطء."
+     ],
+     "tip": "حجم عالي ووزن خفيف. حرقان طبيعي.",
+     "mistake": "المرجحة.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Lateral+Raise",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "oh_ext",
+     "en": "Dumbbell Overhead Tricep Extension",
+     "ar": "تراي خلف الراس بالدمبل",
+     "sets": 3,
+     "reps": "12",
+     "weight": 12,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "triceps"
+     ],
+     "secondary": [],
+     "how": [
+      "امسك دمبل واحد بالإيدين فوق راسك.",
+      "اثني الكوع ونزّل الدمبل ورا راسك لحد ما تحس بشد.",
+      "افرد الكوع لفوق والكوع قريب من راسك."
+     ],
+     "tip": "الشد في وضع الإطالة ده أقوى محفز للتراي.",
+     "mistake": "فتح الكوع لبرا.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-overhead-tricep-extension",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "dips",
+     "en": "Chest Dip",
+     "ar": "متوازي",
+     "sets": 2,
+     "reps": "أقصى عدد",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "chest",
+      "triceps"
+     ],
+     "secondary": [
+      "front_delts"
+     ],
+     "how": [
+      "امسك المتوازي وارفع جسمك والدراع مفرود.",
+      "ميّل لقدام شوية وانزل لحد ما الكتف يبقى في مستوى الكوع تقريبًا.",
+      "ادفع لفوق للآخر."
+     ],
+     "tip": "لو أقل من 5 عدات استخدم جهاز المساعدة.",
+     "mistake": "النزول العميق قوي بيضغط على الكتف.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Chest+Dip",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "incline_walk",
+     "en": "Incline Treadmill Walk",
+     "ar": "مشي على مشاية بميل",
+     "sets": 1,
+     "reps": "15 دقيقة",
+     "weight": null,
+     "unit": "",
+     "weightNote": "",
+     "rest": 0,
+     "rpe": 7,
+     "kind": "cardio",
+     "primary": [
+      "calves",
+      "glutes"
+     ],
+     "secondary": [
+      "quads",
+      "hamstrings"
+     ],
+     "how": [
+      "اضبط الميل على 6–10% والسرعة 5–6 كم/ساعة.",
+      "امشِ بخطوات طبيعية من غير ما تمسك في المشاية.",
+      "حافظ على مجهود متوسط: تقدر تتكلم بجمل قصيرة."
+     ],
+     "tip": "ده لياقة هوائية للمقاتل، مش تمرين تكسير. خليك مرتاح.",
+     "mistake": "مسك المقابض بيلغي نص المجهود.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Incline+Treadmill+Walk",
+     "linkVerified": false,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "pullB",
+   "day": 6,
+   "name": "Pull B",
+   "ar": "سحب B — حجم",
+   "type": "volume",
+   "exercises": [
+    {
+     "id": "neutral_pd",
+     "en": "Neutral Grip Pulldown",
+     "ar": "سحب أمامي بالمسكة المتوازية",
+     "sets": 4,
+     "reps": "8–10",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "lats"
+     ],
+     "secondary": [
+      "biceps",
+      "rear_delts"
+     ],
+     "how": [
+      "ركّب المسكة V واقعد ورجلك تحت الوسادة.",
+      "اسحب المسكة لأعلى الصدر وصدرك لفوق.",
+      "ارجع لحد ما الدراع يتفرد للآخر وتحس بشد في الجناح."
+     ],
+     "tip": "مسكة مختلفة عن يوم A عشان تنوّع الزاوية.",
+     "mistake": "المرجحة لورا.",
+     "link": "https://musclewiki.com/ar-sa/exercise/neutral-pulldown",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "db_row",
+     "en": "Single Arm Dumbbell Row",
+     "ar": "تجديف بدمبل بإيد واحدة",
+     "sets": 3,
+     "reps": "10 لكل دراع",
+     "weight": 16,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 75,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "lats"
+     ],
+     "secondary": [
+      "rear_delts",
+      "biceps",
+      "traps"
+     ],
+     "how": [
+      "اسند إيدك وركبتك على بنش والضهر مفرود.",
+      "اسحب الدمبل ناحية الوسط (مش الصدر).",
+      "نزّل للآخر لحد ما تحس بإطالة في الجناح."
+     ],
+     "tip": "تخيل إن الإيد خطاف والكوع هو اللي بيشد.",
+     "mistake": "لف الجسم مع كل عدة.",
+     "link": "https://www.google.com/search?q=site%3Amusclewiki.com+Dumbbell+Row+Unilateral",
+     "linkVerified": false,
+     "warmup": false
+    },
+    {
+     "id": "cable_row",
+     "en": "Seated Cable Row",
+     "ar": "تجديف كابل قاعد",
+     "sets": 3,
+     "reps": "12",
+     "weight": 35,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 75,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "lats",
+      "traps"
+     ],
+     "secondary": [
+      "biceps",
+      "rear_delts"
+     ],
+     "how": [
+      "اقعد والضهر مفرود والركبة مثنية خفيف.",
+      "اسحب المقابض لبطنك وصدرك لقدام.",
+      "اعصر لوحي الكتف ثانية وارجع بتحكم."
+     ],
+     "tip": "الجسم ثابت تقريبًا — الحركة من الدراع والضهر.",
+     "mistake": "الميل لورا وقدام بالجسم كله.",
+     "link": "https://musclewiki.com/ar-sa/exercise/machine-seated-cable-row",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "rdl",
+     "en": "Barbell Romanian Deadlift",
+     "ar": "ديدلفت روماني",
+     "sets": 3,
+     "reps": "10",
+     "weight": 40,
+     "unit": "كجم",
+     "weightNote": "",
+     "rest": 120,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "hamstrings",
+      "glutes"
+     ],
+     "secondary": [
+      "lower_back",
+      "forearms"
+     ],
+     "how": [
+      "قف والبار في إيدك على عرض الكتف.",
+      "ادفع الوسط لورا والركبة شبه مفرودة والبار لازق في رجلك.",
+      "انزل لحد ما تحس بشد في الخلفية (غالبًا تحت الركبة).",
+      "ادفع الوسط لقدام لحد ما تقف."
+     ],
+     "tip": "خفيف عمدًا — الديدلفت التقيل كان في Pull A.",
+     "mistake": "تقويس الضهر للوصول للأرض.",
+     "link": "https://musclewiki.com/ar-sa/exercise/barbell-romanian-deadlift",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "hammer",
+     "en": "Dumbbell Hammer Curl",
+     "ar": "هامر كيرل",
+     "sets": 3,
+     "reps": "12",
+     "weight": 8,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 60,
+     "rpe": 7,
+     "kind": "reps",
+     "primary": [
+      "biceps",
+      "forearms"
+     ],
+     "secondary": [],
+     "how": [
+      "امسك الدمبل والإبهام لفوق.",
+      "اثني الكوع لحد مستوى الصدر والكوع ثابت.",
+      "نزّل ببطء."
+     ],
+     "tip": "بيقوي الساعد والمسكة كمان.",
+     "mistake": "المرجحة.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-hammer-curl",
+     "linkVerified": true,
+     "warmup": false
+    },
+    {
+     "id": "farmer",
+     "en": "Dumbbell Farmer Walk",
+     "ar": "مشية المزارع",
+     "sets": 3,
+     "reps": "30 متر",
+     "weight": 20,
+     "unit": "كجم",
+     "weightNote": "لكل إيد",
+     "rest": 90,
+     "rpe": 7,
+     "kind": "distance",
+     "primary": [
+      "forearms",
+      "traps"
+     ],
+     "secondary": [
+      "abs",
+      "obliques",
+      "quads"
+     ],
+     "how": [
+      "امسك دمبل تقيل في كل إيد والدراع مفرود.",
+      "قف مستقيم والكتف لورا.",
+      "امشِ بخطوات قصيرة ثابتة للمسافة المطلوبة."
+     ],
+     "tip": "أقرب تمرين لشيل الشنطة والذخيرة في الميدان.",
+     "mistake": "الميل لجنب أو تقويس الضهر.",
+     "link": "https://musclewiki.com/ar-sa/exercise/dumbbell-farmer-walk",
+     "linkVerified": true,
+     "warmup": false
+    }
+   ]
+  },
+  {
+   "id": "rest1",
+   "day": 7,
+   "name": "Rest",
+   "ar": "راحة نشطة",
+   "type": "rest",
+   "text": "مشي 30 دقيقة أو مشي بشنطة فيها 5–10 كجم. اختياري لكن بيبني تحمّل المقاتل."
+  },
+  {
+   "id": "rest2",
+   "day": 8,
+   "name": "Rest",
+   "ar": "راحة كاملة",
+   "type": "rest",
+   "text": "راحة كاملة. نوم 7–8 ساعات وبروتين 185 جم حتى النهارده."
+  }
+ ]
+}
