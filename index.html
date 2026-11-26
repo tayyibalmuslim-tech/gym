@@ -230,7 +230,7 @@ const DEFAULT_PLAN = {
  "cycle": 1,
  "title": "الدورة 1 — معايرة",
  "createdAt": "2026-11-26",
- "rev": 3,
+ "rev": 4,
  "code": "default",
  "targetRpe": 7,
  "notes": [
@@ -1054,8 +1054,16 @@ const DEFAULT_PLAN = {
    ]
   },
   {
-   "id": "legsB",
+   "id": "rest1",
    "day": 4,
+   "name": "Rest",
+   "ar": "راحة — بعد الأيام التقيلة",
+   "type": "rest",
+   "text": "راحة بعد 3 أيام تقيلة. راحة كاملة أو مشي خفيف 20–30 دقيقة لو حابب. نوم 7–8 ساعات وبروتين كامل."
+  },
+  {
+   "id": "legsB",
+   "day": 5,
    "name": "Legs B",
    "ar": "رجل B — حجم",
    "type": "volume",
@@ -1276,7 +1284,7 @@ const DEFAULT_PLAN = {
   },
   {
    "id": "pushB",
-   "day": 5,
+   "day": 6,
    "name": "Push B",
    "ar": "دفع B — حجم",
    "type": "volume",
@@ -1579,7 +1587,7 @@ const DEFAULT_PLAN = {
   },
   {
    "id": "pullB",
-   "day": 6,
+   "day": 7,
    "name": "Pull B",
    "ar": "سحب B — حجم",
    "type": "volume",
@@ -1845,20 +1853,12 @@ const DEFAULT_PLAN = {
    ]
   },
   {
-   "id": "rest1",
-   "day": 7,
-   "name": "Rest",
-   "ar": "راحة نشطة",
-   "type": "rest",
-   "text": "مشي 30 دقيقة أو مشي بشنطة فيها 5–10 كجم. اختياري لكن بيبني تحمّل المقاتل."
-  },
-  {
    "id": "rest2",
    "day": 8,
    "name": "Rest",
-   "ar": "راحة كاملة",
+   "ar": "راحة — نهاية الدورة",
    "type": "rest",
-   "text": "راحة كاملة. نوم 7–8 ساعات وبروتين 185 جم حتى النهارده."
+   "text": "آخر يوم في الدورة. راحة كاملة أو مشي خفيف. لو خلصت الدورة صدّر الملف وابعته عشان تتبني الدورة الجاية."
   }
  ]
 };
@@ -2247,7 +2247,7 @@ function renderSession(){
   let h = `<div class="s-head" style="margin-top:8px"><button class="back" data-nav="cycle">→ الدورة</button><h2>${esc(s.ar)}</h2><span class="tp ${s.type} badge">يوم ${s.day}</span></div>`;
   if(s.type==="rest"){
     const done=!!C().rest?.[s.id];
-    return h+`<div class="card restcard"><div class="em">${s.day===7?"🚶":"😴"}</div><h3>${esc(s.ar)}</h3><p class="muted">${esc(s.text)}</p>
+    return h+`<div class="card restcard"><div class="em">😴</div><h3>${esc(s.ar)}</h3><p class="muted">${esc(s.text)}</p>
     <button class="big ${done?"alt":"go"}" data-act="toggleRest" data-sid="${s.id}">${done?"✓ اتعمل — إلغاء":"تمام، خلصت اليوم ده"}</button></div>${navButtons(s)}`;
   }
   const L=slog(s.id);
