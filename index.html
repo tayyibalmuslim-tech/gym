@@ -1925,6 +1925,19 @@ function elog(sid, ex){
 }
 
 /* ================= الحفظ والمزامنة ================= */
+let lastErr = "";
+function explainErr(e){
+  const c = (e && (e.code||e.message)) || "";
+  if(c.includes("permission-denied") || c.includes("insufficient permissions"))
+    return "Firestore رافض الحفظ (permission-denied): قواعد gym_users و gym_plans مش متضافة، أو متضافة برا بلوك match /databases/{database}/documents، أو ما اتعملهاش Publish.";
+  if(c.includes("unavailable") || c.includes("offline") || c.includes("network"))
+    return "مفيش اتصال بـ Firebase دلوقتي (unavailable) — هيتزامن لما النت يرجع.";
+  if(c.includes("failed-precondition") || c.includes("not-found"))
+    return "قاعدة بيانات Firestore مش متفعّلة في المشروع (failed-precondition).";
+  if(c.includes("unauthenticated")) return "الجلسة انتهت — اعمل خروج وادخل تاني.";
+  if(c.includes("resource-exhausted")) return "وصلت لحد الاستخدام المجاني في Firebase النهارده (resource-exhausted).";
+  return "خطأ غير معروف: " + c;
+}
 let tLocal=null, tCloud=null;
 function save(){
   S.ts = Date.now();
@@ -1953,10 +1966,12 @@ async function pushCloud(){
       planDirty.delete(n);
     }
     await setDoc(doc(FB.db, COL_USERS, UID), userDocData());
-    setSync("ok");
+    lastErr=""; pushCloud._warned=false; setSync("ok");
   }catch(e){
     console.error("cloud save failed", e);
+    lastErr = explainErr(e);
     setSync(navigator.onLine===false ? "offline" : "error");
+    if(!pushCloud._warned){ pushCloud._warned=true; toast("⚠️ "+lastErr.split(":")[0]+" — التفاصيل في حسابي"); }
   }
 }
 async function pullCloud(){
@@ -2092,7 +2107,7 @@ async function onLogin(user){
   showGateMessage(`<div class="loading">⏳ بنجيب بياناتك…</div>`);
   const local = readLocal(UID);
   let remote = null, cloudOk = true;
-  try{ remote = await pullCloud(); }catch(e){ cloudOk=false; console.warn(e); }
+  try{ remote = await pullCloud(); }catch(e){ cloudOk=false; console.warn(e); lastErr=explainErr(e); }
   if(remote && (!local || remote.ts >= local.ts)) S = remote;
   else if(local){ S = local; if(cloudOk){ markAllPlans(); } }
   else {
@@ -2107,7 +2122,7 @@ async function onLogin(user){
   S = upgradeDefaultPlan(S);
   if(S.cycles && !S.cycles[S.current]) S.current = +Object.keys(S.cycles)[0];
   writeLocal();
-  setSync(cloudOk ? "ok" : "offline");
+  setSync(cloudOk ? "ok" : (lastErr.includes("unavailable") ? "offline" : "error"));
   if(!S.profile){
     const pre = S._legacy ? {name:"مازن", height:"181", bodyweight:"96.5", goal:GOALS[0], level:LEVELS[0], planCode:"mazen"} : {};
     delete S._legacy;
@@ -2314,6 +2329,7 @@ function renderData(){
   <div class="card small">
     <div class="kv"><span>الإيميل</span><b dir="ltr">${esc(EMAIL||"—")}</b></div>
     <div class="kv"><span>المزامنة</span><b>${syncTxt}</b></div>
+    ${lastErr?`<div class="tipbox m" style="margin-top:8px">🔎 السبب: ${esc(lastErr)}</div>`:""}
     <div class="kv"><span>الاسم</span><b>${esc(pr.name||"—")}</b></div>
     <div class="kv"><span>الطول / الوزن</span><b>${esc(pr.height||"—")} سم / ${esc(pr.bodyweight||"—")} كجم</b></div>
     <div class="kv"><span>الهدف / المستوى</span><b>${esc(pr.goal||"—")} / ${esc(pr.level||"—")}</b></div>
@@ -2371,7 +2387,7 @@ document.addEventListener("click", e=>{
     case "import": $("#fileIn").click(); break;
     case "fetchPlan": fetchPlan(); break;
     case "editProfile": showProfileForm(S.profile, false); break;
-    case "syncNow": if(!FB){ toast("📴 أوفلاين — افتح التطبيق والنت شغال"); break; } markAllPlans(); setSync("saving"); pushCloud().then(()=>{ toast(sync==="ok"?"✅ اتزامن":"⚠️ المزامنة فشلت"); if(view.name==="data") render(); }); break;
+    case "syncNow": if(!FB){ toast("📴 أوفلاين — افتح التطبيق والنت شغال"); break; } markAllPlans(); setSync("saving"); pushCloud().then(()=>{ toast(sync==="ok"?"✅ اتزامن":"⚠️ المزامنة فشلت — السبب مكتوب تحت"); if(view.name==="data") render(); }); break;
     case "switch": S.current=+b.dataset.c; save(); toast("اتفتحت الدورة "+S.current); go("cycle"); break;
     case "resetCycle": if(confirm("متأكد؟ هيتمسح كل اللي سجلته في الدورة دي. (صدّر نسخة الأول)")){ C().log={}; C().rest={}; save(); render(); toast("اتمسح"); } break;
     case "signOut": doSignOut(); break;
